@@ -66,13 +66,9 @@
     <!-- Perrito interesado -->
     <div class="mb-3">
       <label for="perrito" class="form-label">Perrito interesado en adoptar</label>
-      <select class="form-select" id="perrito" required>
-        <option value="" selected disabled>Selecciona un perrito</option>
-        <option value="Max">Max</option>
-        <option value="Luna">Luna</option>
-        <option value="Rocky">Rocky</option>
-        <!-- Aquí puedes agregar más opciones -->
-      </select>
+        <select class="form-select" id="perrito" required>
+          <option value="" selected disabled>Selecciona un perrito</option>
+        </select>
     </div>
 
     <!-- Grupo familiar / Edad del adoptante -->
@@ -119,3 +115,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Nombres de perritos extraídos de adopcion.html (puedes automatizarlo aún más si usas backend o fetch)
+const perritos = ["LUNA", "MAX", "ROCKY", "BELLA"];
+const selectPerrito = document.getElementById('perrito');
+if (selectPerrito) {
+  perritos.forEach(nombre => {
+    const opt = document.createElement('option');
+    opt.value = nombre;
+    opt.textContent = nombre.charAt(0) + nombre.slice(1).toLowerCase();
+    selectPerrito.appendChild(opt);
+  });
+}
+</script>

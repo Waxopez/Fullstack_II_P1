@@ -12,27 +12,24 @@
 </head>
 <body>
   
-  <!-- Header / Menú -->
+<!-- Navbar -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">🐾 Adopta un Amigo</a>
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-        aria-controls="menu" aria-expanded="false" aria-label="Menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Enlaces -->
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Inicio</a>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="adopcion.html">Adopción</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item login-btn">
+            <a class="nav-link btn btn-light text-danger px-3 ms-2" href="login.html">Iniciar sesión</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="adopcion.html">Adopción</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
+          <li class="nav-item register-btn">
+            <a class="nav-link btn btn-warning text-white px-3 ms-2" href="register.html">Registro</a>
           </li>
         </ul>
       </div>
@@ -42,7 +39,6 @@
 
 <!-- Banner con carrusel -->
 <section class="banner position-relative text-center text-white">
-  <!-- Carrusel de fondo -->
   <div id="bannerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -57,7 +53,6 @@
     </div>
   </div>
 
-  <!-- Contenido encima del carrusel -->
   <div class="banner-content position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-4 rounded w-100" style="max-width: 800px;">
     <h1 class="fw-bold">“Un amigo no se compra, se adopta” 🐾</h1>
     <p class="lead">Dale una nueva oportunidad a un perrito que espera por ti.</p>
@@ -65,36 +60,36 @@
   </div>
 </section>
 
-  <!-- Misión y Visión -->
-  <section class="container my-5">
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card shadow h-100">
-          <div class="card-body">
-            <h5 class="card-title text-danger">Nuestra Misión</h5>
-            <p class="card-text">Rescatar, cuidar y encontrar un hogar amoroso para cada perrito en situación de abandono.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card shadow h-100">
-          <div class="card-body">
-            <h5 class="card-title text-danger">Nuestra Visión</h5>
-            <p class="card-text">Un mundo donde todos los perritos tengan un hogar lleno de amor y cuidados.</p>
-          </div>
+<!-- Misión y Visión -->
+<section class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow h-100">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Nuestra Misión</h5>
+          <p class="card-text">Rescatar, cuidar y encontrar un hogar amoroso para cada perrito en situación de abandono.</p>
         </div>
       </div>
     </div>
-  </section>
+    <div class="col-md-6">
+      <div class="card shadow h-100">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Nuestra Visión</h5>
+          <p class="card-text">Un mundo donde todos los perritos tengan un hogar lleno de amor y cuidados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Footer -->
-<footer class="footer text-white text-center p-3">
+<footer class="footer text-white text-center p-3 bg-danger">
   <p>&copy; 2025 Adopta un Amigo | Todos los derechos reservados</p>
 </footer>
 
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/session.js"></script>
 </body>
 </html>
-
